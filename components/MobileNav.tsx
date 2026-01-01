@@ -17,6 +17,7 @@ import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { links } from "@/lib/links";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export const MobileNav = () => {
   const pathName = usePathname();
@@ -35,9 +36,17 @@ export const MobileNav = () => {
           {/* Header */}
           <SheetHeader>
             <SheetTitle>
-              <Link href="/" className="block w-fit">
-                <span className="text-2xl font-semibold text-[#111111] tracking-tight">
-                  Bridge<span className="text-primary">360</span>
+              <Link href="/" className="flex items-center w-fit space-x-2">
+                <Image
+                  src="/logo-dark.jpeg"
+                  alt="Bridge360 Exchange logo"
+                  width={42}
+                  height={42}
+                  priority
+                />
+                <span className="text-[0.4em] font-semibold text-[#111111] tracking-tight">
+                  Bridge 360 <br />
+                  <span className="text-primary">Exchange</span>
                 </span>
               </Link>
             </SheetTitle>

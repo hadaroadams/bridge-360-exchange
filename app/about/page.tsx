@@ -113,9 +113,9 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <HomeFeaturesSection />
       <section className="section-padding py-20 flex justify-center">
         <div className="w-full ">
-          <HomeFeaturesSection />
           <WhyChooseUs />
         </div>
       </section>

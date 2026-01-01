@@ -55,10 +55,10 @@ function HomeFeaturesSection() {
                 className="
               
                   rounded-3xl
-                  p-8
+                 
                   transition
                   hover:-translate-y-1
-                  hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)]
+                  
                 "
               >
                 {/* Icon Circle */}
