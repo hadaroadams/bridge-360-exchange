@@ -1,0 +1,110 @@
+import Image from "next/image";
+import React from "react";
+
+function HomeWhoItForSection() {
+  const items = [
+    "Being a Fresh Graduate",
+    "Being a Working Professional",
+    "Being a Continuing Student",
+  ];
+
+  return (
+    <section className="relative bg-white py-28 overflow-hidden">
+      {/* BACKGROUND IMAGE */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute left-0 top-0 h-full w-full">
+          <Image
+            src="/bg-06.jpg" // or .svg
+            alt=""
+            fill
+            className="object-cover opacity-[0.6]"
+            priority={false}
+          />
+        </div>
+      </div>
+
+      {/* CONTENT */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+        {/* LEFT — Text */}
+        <div className="lg:col-span-3">
+          <h2
+            className="
+              text-2xl sm:text-3xl md:text-5xl
+              font-semibold
+              leading-snug
+              text-[#111111]
+              max-w-sm
+            "
+          >
+            J1 Could Be the Best Option for You
+          </h2>
+
+          <p
+            className="
+              mt-6
+              text-sm sm:text-base
+              text-gray-600
+              leading-relaxed
+              max-w-xs
+            "
+          >
+            Gain international exposure, professional experience, and cultural
+            exchange through the J1 program designed for growth.
+          </p>
+          <div className="w-[100px] mt-5 h-[2px] bg-primary" />
+        </div>
+
+        {/* CENTER — Image */}
+        <div className="lg:col-span-5 relative">
+          <div className="relative w-full h-[340px] sm:h-[420px] lg:h-[700px]">
+            <Image
+              src="/bg-05.jpg"
+              alt="J1 Exchange Program"
+              fill
+              className="object-cover rounded-3xl"
+              priority
+            />
+          </div>
+        </div>
+
+        {/* RIGHT — List (Overlapping Image) */}
+        <div className="lg:col-span-4 relative lg:-ml-20 z-10 lg:-translate-x-10">
+          <ul className="space-y-6">
+            {items.map((item, index) => (
+              <li
+                key={item}
+                className="
+                  flex items-center gap-4
+                  bg-white
+                  p-4 pr-6
+                  rounded-full
+                  shadow-[0_15px_40px_rgba(0,0,0,0.08)]
+                "
+              >
+                <span
+                  className="
+                    flex items-center justify-center
+                    size-25
+                    rounded-full
+                    bg-primary/10
+                    text-primary
+                    font-semibold
+                     text-2xl sm:text-3xl md:text-5xl
+                  "
+                >
+                  {index + 1}
+                </span>
+
+                <p className="text-[#111111] font-medium text-sm sm:text-base">
+                  {item}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default HomeWhoItForSection;
