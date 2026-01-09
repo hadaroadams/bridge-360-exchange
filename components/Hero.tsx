@@ -46,7 +46,7 @@ function Hero() {
             }}
             className="text-sm md:text-base tracking-wide uppercase text-[#C78A2E]"
           >
-            Looking for a tutor?
+            Bridge360 Exchange and Travels
           </motion.p>
 
           {/* Heading */}
@@ -57,8 +57,8 @@ function Hero() {
             }}
             className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
           >
-            Start Your Global Education Journey With{" "}
-            <span className="text-[#C78A2E]">Bridge360 Exchange</span>
+            Your international exchange program and{" "}
+            <span className="text-[#C78A2E]">visa application partners</span>
           </motion.h1>
 
           {/* Subtext */}
@@ -69,8 +69,8 @@ function Hero() {
             }}
             className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto"
           >
-            Connect with expert tutors worldwide and unlock opportunities
-            through quality language education.
+            Connect with Traveling experts and unlock Traveling opportunities
+            that fit your traveling purpose.
           </motion.p>
 
           {/* CTA Buttons */}

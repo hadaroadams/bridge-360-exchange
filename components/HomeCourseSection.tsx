@@ -34,7 +34,7 @@ export default function HomeCourseSection() {
           className="max-w-xl sm:max-w-2xl lg:max-w-3xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24 px-2 sm:px-0"
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/40 text-[10px] sm:text-xs font-semibold tracking-widest text-primary">
-            PROGRAMS & SERVICES
+            AVAILABLE INTERNATIONAL TRAVEL OPPORTUNITIES
           </span>
 
           <h2 className="mt-6 sm:mt-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug sm:leading-tight text-[#111111]">
@@ -44,9 +44,10 @@ export default function HomeCourseSection() {
           </h2>
 
           <p className="mt-5 sm:mt-6 lg:mt-8 text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
-            From international study programs and cultural exchanges to visa
-            support and professional preparation, Bridge360 Exchange connects
-            you to trusted pathways worldwide.
+            From international study programs and cultural exchanges to
+            comprehensive visa support and professional preparation, Bridge360
+            Exchange connects you to trusted global pathways that meet your
+            Travel objectives
           </p>
         </motion.div>
 
@@ -85,8 +86,8 @@ export default function HomeCourseSection() {
 
               {/* Link to Course Page */}
               <Link
-                href={``}
-                // href={`/courses/${item.slug}`}
+                // href={``}
+                href={`/courses/${item.slug}`}
                 className="mt-5 inline-block text-primary font-semibold hover:underline"
               >
                 Learn More →

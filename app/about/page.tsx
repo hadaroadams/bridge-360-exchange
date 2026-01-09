@@ -50,17 +50,25 @@ export default function AboutPage() {
             className="space-y-6"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#111111] leading-tight max-w-4xl mx-auto">
-              We connect students and teachers through meaningful global
-              education experiences.
+              We work with the best exchange program sponsors, giving you the
+              best international experience and a smooth visa acquisition
+              process. Learn more about other visa categories
             </h2>
-
             <div className="w-24 h-[2px] bg-primary mx-auto" />
-
             <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Our mission is to make international education and cultural
-              exchange accessible to everyone. We envision a global network of
-              learners and tutors connected through trust, expertise, and
-              opportunity.
+              Bridge360 Exchange and Travels is an international exchange and
+              visa facilitation organization committed to guiding individuals
+              toward informed decisions that align with their educational,
+              professional, and travel aspirations. We specialize in supporting
+              opportunities such as studying abroad, cultural and exchange
+              programs, professional placements, and visa application processes.
+              With a client-centered approach, Bridge360 provides reliable
+              guidance, personalized counseling, and end-to-end support to help
+              students, professionals, and travelers navigate global
+              opportunities with confidence. Our mission is to bridge dreams
+              with possibilities by simplifying complex processes and connecting
+              people to life-changing international experiences and
+              opportunities
             </p>
           </motion.div>
 
@@ -76,11 +84,13 @@ export default function AboutPage() {
                 Our Mission
               </span>
               <h3 className="text-xl md:text-2xl font-medium leading-snug mt-5">
-                To empower students worldwide by providing access to top-quality
-                tutors and global learning programs.
+                To empower students, professionals, and travelers with accurate
+                guidance, trusted partnerships, and seamless support in
+                accessing international education, cultural exchange, and global
+                mobility opportunities, ensuring informed decisions and
+                successful outcomes at every stage of the journey
               </h3>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -92,8 +102,10 @@ export default function AboutPage() {
                 Our Vision
               </span>
               <h3 className="text-xl md:text-2xl font-medium leading-snug mt-5">
-                To create a connected world where education knows no borders and
-                learners reach their full potential.
+                To become a globally trusted bridge connecting people to
+                life-changing international experiences through excellence in
+                exchange programs, visa facilitation, and cross-cultural
+                engagement.
               </h3>
             </motion.div>
           </div>

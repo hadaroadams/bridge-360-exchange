@@ -35,18 +35,18 @@ const Header = () => {
           boxShadow: scrolled ? "0 10px 30px rgba(0,0,0,0.3)" : "none",
         }}
         transition={{ duration: 0.3 }}
-        className=" w-full px-6 py-3 rounded-full mt-4 flex items-center justify-between"
+        className=" w-full px-10 py-3 rounded-full mt-4 flex items-center justify-between"
       >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/logo-light.jpeg"
             alt="Bridge360 Exchange logo"
-            width={42}
-            height={42}
+            width={52}
+            height={52}
             priority
           />
-          <span className="hidden sm:block text-[0.4em] text-white font-semibold tracking-wide">
+          <span className="hidden sm:block text-[0.6em] text-white font-semibold tracking-wide">
             Bridge360 <br /> <span className="text-primary">Exchange</span>
           </span>
         </Link>
