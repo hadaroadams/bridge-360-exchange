@@ -21,6 +21,11 @@ const Header = () => {
 
   if (pathName.startsWith("/studio")) return null;
 
+  // Helper to check if a link or its children are active
+  const isActive = (link: (typeof links)[0]) =>
+    link.href === pathName ||
+    link.children?.some((child) => child.href === pathName);
+
   return (
     <motion.header
       initial={{ y: -20, opacity: 0 }}
@@ -35,7 +40,7 @@ const Header = () => {
           boxShadow: scrolled ? "0 10px 30px rgba(0,0,0,0.3)" : "none",
         }}
         transition={{ duration: 0.3 }}
-        className=" w-full px-10 py-3 rounded-full mt-4 flex items-center justify-between"
+        className="w-full px-10 py-3 rounded-full mt-4 flex items-center justify-between"
       >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
@@ -52,24 +57,48 @@ const Header = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <ul className="hidden lg:flex items-center gap-8 text-sm tracking-wider text-white">
-          {links
-            // .filter((link) => link.href !== "/contact")
-            .map((link) => (
-              <li key={link.href}>
-                <Link href={link.href} className="relative group">
-                  {link.title}
-                  <span
-                    className={`absolute left-0 -bottom-1 h-[2px] bg-primary transition-all duration-300
-                    ${
-                      link.href === pathName
-                        ? "w-full"
-                        : "w-0 group-hover:w-full"
-                    }`}
-                  />
-                </Link>
-              </li>
-            ))}
+        <ul className="hidden lg:flex items-center gap-8 text-sm tracking-wider text-white relative">
+          {links.map((link) => (
+            <li key={link.href} className="relative group">
+              <Link
+                href={link.href}
+                className={`relative z-10 ${
+                  isActive(link) ? "after:w-full " : ""
+                }`}
+              >
+                {link.title}
+                <span
+                  className={`absolute left-0 -bottom-1 h-[2px] bg-primary transition-all duration-300
+                    ${isActive(link) ? "w-full" : "w-0 group-hover:w-full"}`}
+                />
+              </Link>
+
+              {/* Dropdown for sub-courses */}
+              {link.children && (
+                <motion.ul
+                  initial={{ opacity: 0, y: -10 }}
+                  whileHover={{ opacity: 1, y: 0 }}
+                  className="absolute top-full left-0 mt-2 w-56 bg-black rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                >
+                  {link.children.map((child) => (
+                    <li
+                      key={child.href}
+                      className="border-b border-black/20 last:border-none"
+                    >
+                      <Link
+                        href={child.href}
+                        className={`block px-4 py-3 text-sm text-white hover:bg-primary/20 transition ${
+                          pathName === child.href ? "bg-primary/20" : ""
+                        }`}
+                      >
+                        {child.title}
+                      </Link>
+                    </li>
+                  ))}
+                </motion.ul>
+              )}
+            </li>
+          ))}
         </ul>
 
         {/* CTA */}
