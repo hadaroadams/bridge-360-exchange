@@ -10,23 +10,13 @@ function HomeWhoItForSection() {
 
   return (
     <section className="relative py-28 overflow-hidden bg-white">
-      {/* BACKGROUND IMAGE */}
-      {/* <div className="absolute inset-0 -z-10">
-        <Image
-          src="/bg-06.jpg"
-          alt="Background"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div> */}
-      <Image
+      {/* <Image
         src="/bg-06.jpg"
         alt="hero image"
         fill
         className="object-cover"
         priority
-      />
+      /> */}
       {/* Overlay */}
       <div className="absolute inset-0 bg-white/70" />
 
