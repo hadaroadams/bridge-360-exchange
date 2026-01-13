@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -152,7 +151,7 @@ export default function MobileNav() {
             <ul className="flex gap-6">
               <li>
                 <Link
-                  href="https://web.facebook.com/genevieve.sedalo"
+                  href="https://www.facebook.com/share/1C5mGRQMxG/?mibextid=wwXIfr"
                   className="text-gray-500 hover:text-primary transition"
                 >
                   <FaSquareFacebook size={22} />
@@ -160,7 +159,7 @@ export default function MobileNav() {
               </li>
               <li>
                 <Link
-                  href="https://www.instagram.com/gdsedalo09/"
+                  href="https://www.instagram.com/bridge360exchange?igsh=MTczdW84MmFtcnhxMw%3D%3D&utm_source=qr"
                   className="text-gray-500 hover:text-primary transition"
                 >
                   <RiInstagramFill size={22} />
@@ -168,7 +167,7 @@ export default function MobileNav() {
               </li>
               <li>
                 <Link
-                  href="https://www.linkedin.com/in/genevieve-sedalo-ph-d-0aa26b27"
+                  href="https://www.linkedin.com/in/bridgethreesixty-exchange-8479bb3a3/"
                   className="text-gray-500 hover:text-primary transition"
                 >
                   <FaLinkedin size={22} />

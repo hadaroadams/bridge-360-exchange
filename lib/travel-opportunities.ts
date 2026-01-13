@@ -22,7 +22,7 @@ export interface Course {
   icon?: React.ElementType;
 }
 
-export const courses: Course[] = [
+export const travel_opportunity: Course[] = [
   {
     slug: "visa-application",
     title: "Visa Application",
@@ -236,13 +236,13 @@ export const courses: Course[] = [
 
 // import { Course } from "@/types";
 
-export const courses_details: CourseDetails[] = [
+export const travel_opportunity_details: CourseDetails[] = [
   {
     slug: "visa-application",
     title: "Visa Application",
     subtitle:
       "Secure your visa for study, work, visit, or exchange programs across top global destinations.",
-    heroImage: "/courses/visa.jpg",
+    heroImage: "/travel-opportunity/visa.jpg",
 
     overview: [
       "Our visa application service is designed to give clients confidence and peace of mind as they pursue study, work, visit, or exchange opportunities abroad. With expert guidance, careful documentation review, and personalized support, we help minimize errors and maximize approval success.",
@@ -271,7 +271,7 @@ export const courses_details: CourseDetails[] = [
   {
     slug: "j1-visa-application",
     title: "J-1 Exchange Programs & Visa Application",
-    heroImage: "/courses/j1.jpg",
+    heroImage: "/travel-opportunity/j1.jpg",
 
     overview: [
       "Bridge360 Exchange and Travels offers trusted support for J-1 Exchange Programs and visa applications, connecting applicants to valuable cultural, academic, and professional experiences in the United States.",
@@ -284,7 +284,7 @@ export const courses_details: CourseDetails[] = [
   {
     slug: "europe-exchange-internships",
     title: "Exchange Programs & Internships in Europe",
-    heroImage: "/courses/europe.jpg",
+    heroImage: "/travel-opportunity/europe.jpg",
 
     overview: [
       "Bridge360 Exchange and Travels connects applicants to exciting exchange programs and internship opportunities across Europe, offering valuable international exposure, practical experience, and cultural immersion.",
@@ -333,7 +333,7 @@ export const courses_details: CourseDetails[] = [
   {
     slug: "study-in-usa-f1",
     title: "Study in the USA & F-1 Visa Application Support",
-    heroImage: "/courses/usa-study.jpg",
+    heroImage: "/travel-opportunity/usa-study.jpg",
 
     overview: [
       "Studying in the United States remains one of the most competitive and life-changing educational opportunities in the world. However, securing admission and successfully obtaining an F-1 student visa has become increasingly challenging.",
@@ -353,7 +353,7 @@ export const courses_details: CourseDetails[] = [
   {
     slug: "study-in-europe",
     title: "Study in Europe & Study Permit Application Support",
-    heroImage: "/courses/europe-study.jpg",
+    heroImage: "/travel-opportunity/europe-study.jpg",
 
     overview: [
       "Europe offers world-class education with affordable and even tuition-free programs, but navigating these opportunities requires expertise.",
@@ -373,7 +373,7 @@ export const courses_details: CourseDetails[] = [
   {
     slug: "study-in-asia-australia",
     title: "Study in Asia & Australia – Visa & Work Permit Support",
-    heroImage: "/courses/asia.jpg",
+    heroImage: "/travel-opportunity/asia.jpg",
 
     overview: [
       "Asia and Australia offer high-quality, technology-driven education at affordable costs, making them ideal destinations for African students.",
@@ -393,7 +393,7 @@ export const courses_details: CourseDetails[] = [
   {
     slug: "cv-and-career-preparation",
     title: "My Perfect CV & Dream Job",
-    heroImage: "/courses/career.jpg",
+    heroImage: "/travel-opportunity/career.jpg",
 
     overview: [
       "At Bridge360 Exchange and Travels, we help applicants stand out in competitive job markets through professional CV development, cover letters, job application support, and interview preparation.",
@@ -412,7 +412,7 @@ export const courses_details: CourseDetails[] = [
   {
     slug: "international-exams",
     title: "International Exams & English Test Preparation",
-    heroImage: "/courses/exams.jpg",
+    heroImage: "/travel-opportunity/exams.jpg",
 
     overview: [
       "Bridge360 Exchange and Travels prepares students for IELTS, TOEFL, GRE, GMAT, SAT, and other international exams.",

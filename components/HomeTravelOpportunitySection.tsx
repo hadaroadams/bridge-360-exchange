@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
-import { courses } from "@/lib/courses";
+import { travel_opportunity } from "@/lib/travel-opportunities";
 // import { courses } from "@/data/courses"; // Replace programs with your detailed array
 
 const headerVariants = {
@@ -21,7 +21,7 @@ const cardVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
-export default function HomeCourseSection() {
+export default function HomeTravelOpportunitySection() {
   return (
     <section className="bg-[#F7F7F7] py-28">
       <div className="max-w-7xl mx-auto px-6">
@@ -59,7 +59,7 @@ export default function HomeCourseSection() {
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
         >
-          {courses.map((item) => (
+          {travel_opportunity.map((item) => (
             <motion.article
               key={item.slug}
               variants={cardVariants}

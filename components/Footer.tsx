@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
 import Image from "next/image";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
@@ -43,13 +42,8 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/programs" className="hover:text-white">
-                  Programs
-                </Link>
-              </li>
-              <li>
-                <Link href="/tutors" className="hover:text-white">
-                  Tutors
+                <Link href="/travel-opportunity" className="hover:text-white">
+                  Travel Oppportunity
                 </Link>
               </li>
               <li>
@@ -85,19 +79,19 @@ function Footer() {
 
             <div className="mt-6 flex gap-4">
               <Link
-                href="#"
+                href="https://www.facebook.com/share/1C5mGRQMxG/?mibextid=wwXIfr"
                 className="p-2 rounded-full border border-white/20 hover:border-primary hover:text-primary"
               >
                 <FaSquareFacebook size={18} />
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/bridge360exchange?igsh=MTczdW84MmFtcnhxMw%3D%3D&utm_source=qr"
                 className="p-2 rounded-full border border-white/20 hover:border-primary hover:text-primary"
               >
                 <RiInstagramFill size={18} />
               </Link>
               <Link
-                href="#"
+                href="https://www.linkedin.com/in/bridgethreesixty-exchange-8479bb3a3/"
                 className="p-2 rounded-full border border-white/20 hover:border-primary hover:text-primary"
               >
                 <FaLinkedin size={18} />
@@ -121,7 +115,6 @@ function Footer() {
             © {new Date().getFullYear()} Bridge360 Exchange. All rights
             reserved.
           </p>
-          <p>Designed with care 🌍</p>
         </div>
       </div>
     </footer>

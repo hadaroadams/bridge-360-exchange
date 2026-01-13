@@ -4,40 +4,40 @@ export const links = [
     href: "/",
   },
   {
-    title: "Courses",
-    href: "/courses",
+    title: "Travel Opportunities",
+    href: "/travel-opportunity",
     children: [
       {
         title: "Visa Application",
-        href: "/courses/visa-application",
+        href: "/travel-opportunity/visa-application",
       },
       {
         title: "J-1 Exchange Programs",
-        href: "/courses/j1-visa-application",
+        href: "/travel-opportunity/j1-visa-application",
       },
       {
         title: "Europe Exchange & Internships",
-        href: "/courses/europe-exchange-internships",
+        href: "/travel-opportunity/europe-exchange-internships",
       },
       {
         title: "Study in USA (F-1)",
-        href: "/courses/study-in-usa-f1",
+        href: "/travel-opportunity/study-in-usa-f1",
       },
       {
         title: "Study in Europe",
-        href: "/courses/study-in-europe",
+        href: "/travel-opportunity/study-in-europe",
       },
       {
         title: "Study in Asia & Australia",
-        href: "/courses/study-in-asia-australia",
+        href: "/travel-opportunity/study-in-asia-australia",
       },
       {
         title: "CV & Career Preparation",
-        href: "/courses/cv-and-career-preparation",
+        href: "/travel-opportunity/cv-and-career-preparation",
       },
       {
         title: "International Exams",
-        href: "/courses/international-exams",
+        href: "/travel-opportunity/international-exams",
       },
     ],
   },
@@ -48,5 +48,20 @@ export const links = [
   {
     title: "Contact",
     href: "/contact",
+  },
+];
+
+export const socialLinks = [
+  {
+    title: "Facebook",
+    href: "https://www.facebook.com/bridge360exchange",
+  },
+  {
+    title: "Instagram",
+    href: "https://www.instagram.com/bridge360exchange",
+  },
+  {
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/company/bridge360exchange",
   },
 ];

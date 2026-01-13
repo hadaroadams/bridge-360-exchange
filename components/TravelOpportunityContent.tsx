@@ -2,19 +2,19 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
-import { courses_details } from "@/lib/courses";
+import { travel_opportunity_details } from "@/lib/travel-opportunities";
 
-function CourseContent({ slug }: { slug: string }) {
-  const course =
-    courses_details.find((c) => c.slug === slug) || courses_details[0];
-
+function TravelOpportunityContent({ slug }: { slug: string }) {
+  const travel_opportunity_detail =
+    travel_opportunity_details.find((c) => c.slug === slug) ||
+    travel_opportunity_details[0];
   return (
     <main className="w-full overflow-hidden">
       {/* ================= HERO ================= */}
       <section className="relative h-[70vh] min-h-[480px] bg-black">
         <Image
-          src="/cta-bg.jpg"
-          alt={course.title}
+          src="/bg-04.jpg"
+          alt={travel_opportunity_detail.title}
           fill
           className="object-cover"
           priority
@@ -29,16 +29,16 @@ function CourseContent({ slug }: { slug: string }) {
             className="max-w-4xl text-center"
           >
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/40 text-[10px] sm:text-xs font-semibold tracking-widest text-primary">
-              COURSE DETAILS
+              TRAVEL OPPORTUNITY DETAILS
             </span>
 
             <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight">
-              {course.title}
+              {travel_opportunity_detail.title}
             </h1>
 
-            {course.subtitle && (
+            {travel_opportunity_detail.subtitle && (
               <p className="mt-6 text-gray-300 text-base sm:text-lg max-w-2xl mx-auto">
-                {course.subtitle}
+                {travel_opportunity_detail.subtitle}
               </p>
             )}
           </motion.div>
@@ -57,7 +57,7 @@ function CourseContent({ slug }: { slug: string }) {
           </h2>
 
           <div className="mt-12 space-y-6 text-gray-600 text-base sm:text-lg max-w-4xl">
-            {course.overview.map((p, i) => (
+            {travel_opportunity_detail.overview.map((p, i) => (
               <p key={i} className="leading-relaxed">
                 {p}
               </p>
@@ -67,7 +67,7 @@ function CourseContent({ slug }: { slug: string }) {
       </section>
 
       {/* ================= DESTINATIONS ================= */}
-      {course.destinations && (
+      {travel_opportunity_detail.destinations && (
         <section className="py-28 bg-[#FAFAFA] border-t border-black/10">
           <div className="max-w-7xl mx-auto px-6 text-center">
             <span className="text-xs tracking-[0.25em] font-semibold text-primary">
@@ -79,7 +79,7 @@ function CourseContent({ slug }: { slug: string }) {
             </h3>
 
             <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
-              {course.destinations.map((d, i) => (
+              {travel_opportunity_detail.destinations.map((d, i) => (
                 <div
                   key={i}
                   className="text-gray-600 leading-relaxed text-base border-b border-black/10 pb-2"
@@ -93,10 +93,10 @@ function CourseContent({ slug }: { slug: string }) {
       )}
 
       {/* ================= SECTIONS ================= */}
-      {course.sections && (
+      {travel_opportunity_detail.sections && (
         <section className="py-32 bg-white">
           <div className="max-w-5xl mx-auto px-6 space-y-24">
-            {course.sections.map((section, i) => (
+            {travel_opportunity_detail.sections.map((section, i) => (
               <div key={i}>
                 <h3 className="text-2xl sm:text-3xl font-semibold text-[#111111] text-center">
                   {section.title}
@@ -128,7 +128,7 @@ function CourseContent({ slug }: { slug: string }) {
       )}
 
       {/* ================= WHY CHOOSE ================= */}
-      {course.whyChoose && (
+      {travel_opportunity_detail.whyChoose && (
         <section className="py-32 bg-[#FAFAFA] border-t border-black/10">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <span className="text-xs tracking-[0.25em] font-semibold text-primary">
@@ -140,7 +140,7 @@ function CourseContent({ slug }: { slug: string }) {
             </h3>
 
             <div className="mt-14 grid sm:grid-cols-2 gap-12 text-left">
-              {course.whyChoose.map((item, i) => (
+              {travel_opportunity_detail.whyChoose.map((item, i) => (
                 <p
                   key={i}
                   className="text-gray-700 text-base leading-relaxed border-l border-primary pl-6"
@@ -156,4 +156,4 @@ function CourseContent({ slug }: { slug: string }) {
   );
 }
 
-export default CourseContent;
+export default TravelOpportunityContent;

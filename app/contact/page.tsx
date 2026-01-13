@@ -31,7 +31,7 @@ export default function ContactPage() {
       {/* ================= HERO ================= */}
       <section className="relative h-[65vh] min-h-[440px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/cta-bg.jpg"
+          src="/person-1.png"
           alt="Contact Bridge360"
           fill
           className="object-cover"

@@ -13,7 +13,7 @@ export default function AboutPage() {
       {/* ================= HERO ================= */}
       <section className="relative w-full  h-[65vh] min-h-[440px] bg-black overflow-hidden">
         <Image
-          src="/cta-bg.jpg"
+          src="/bg-04.jpg"
           alt="About Bridge360 Exchange"
           fill
           className="object-cover"

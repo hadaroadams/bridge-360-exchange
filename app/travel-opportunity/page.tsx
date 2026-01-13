@@ -4,75 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 import CallToActionSection from "@/components/CallToActionSection";
-import HomeCourseSection from "@/components/HomeCourseSection";
-
-/* ================= DATA ================= */
-
-const courses = [
-  {
-    code: "EN",
-    title: "English Language Mastery",
-    subtitle: "Beginner – Advanced",
-  },
-  {
-    code: "IE",
-    title: "IELTS Exam Preparation",
-    subtitle: "Academic & General",
-  },
-  {
-    code: "TO",
-    title: "TOEFL Preparation",
-    subtitle: "University Admission",
-  },
-  {
-    code: "VI",
-    title: "Visa Interview Coaching",
-    subtitle: "USA / UK / Schengen",
-  },
-  {
-    code: "CV",
-    title: "My Perfect CV",
-    subtitle: "Global Job Ready",
-  },
-  {
-    code: "EX",
-    title: "International Exams",
-    subtitle: "SAT • GRE • GMAT",
-  },
-  {
-    code: "CA",
-    title: "Career Readiness",
-    subtitle: "Work Abroad Skills",
-  },
-  {
-    code: "LN",
-    title: "Language Tutoring",
-    subtitle: "1-on-1 Global Tutors",
-  },
-];
-
-/* ================= ANIMATION VARIANTS ================= */
-
-const gridVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.15,
-    },
-  },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: "easeOut" },
-  },
-};
-
-/* ================= PAGE ================= */
+import HomeCourseSection from "@/components/HomeTravelOpportunitySection";
 
 export default function CoursesPage() {
   return (
@@ -80,7 +12,7 @@ export default function CoursesPage() {
       {/* ================= HERO ================= */}
       <section className="relative  h-[65vh] min-h-[440px] bg-black overflow-hidden">
         <Image
-          src="/cta-bg.jpg"
+          src="/bg-04.jpg"
           alt="Courses"
           fill
           priority

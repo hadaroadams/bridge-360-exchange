@@ -56,7 +56,7 @@ function CallToActionSection() {
                 text-white
               "
             >
-              Ready to Start Your Global Learning Journey?
+              Ready to Start Your Global Learning Journey?qweq
             </h2>
 
             <p

@@ -40,7 +40,7 @@ function HomeWhoItForSection() {
         <div className="lg:col-span-5">
           <div className="relative w-full h-[360px] sm:h-[450px] lg:h-[700px]">
             <Image
-              src="/bg-05.jpg"
+              src="/person-2.png"
               alt="J1 Exchange Program"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
