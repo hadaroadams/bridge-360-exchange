@@ -56,7 +56,7 @@ function CallToActionSection() {
                 text-white
               "
             >
-              Ready to Start Your Global Learning Journey?qweq
+              Ready to take full advantage of available opportunities ?
             </h2>
 
             <p
@@ -68,8 +68,9 @@ function CallToActionSection() {
                 max-w-xl
               "
             >
-              Connect with expert tutors and access international programs
-              designed to help you learn, grow, and succeed globally.
+              Our team is here to guide you every step of the way. Get in touch,
+              send us whatsapp messages or via our social media handles or call
+              directly for further inquiry.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">

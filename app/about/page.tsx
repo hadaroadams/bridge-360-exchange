@@ -116,7 +116,7 @@ export default function AboutPage() {
       <section className="section-padding">
         <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] overflow-hidden rounded-3xl shadow-[0_25px_60px_rgba(0,0,0,0.14)]">
           <Image
-            src="/cta-bg.jpg"
+            src="/about-1.jpg"
             alt="Bridge360 global education"
             fill
             className="object-cover"

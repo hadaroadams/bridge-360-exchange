@@ -31,7 +31,7 @@ function WhyChooseUs() {
               max-w-md
             "
       >
-        Learn a new language online anywhere, anytime!
+        Learn more about available travel opportunities and take full advantage
       </h3>
 
       {/* Accordion */}

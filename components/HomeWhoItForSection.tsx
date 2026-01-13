@@ -38,7 +38,7 @@ function HomeWhoItForSection() {
 
         {/* CENTER IMAGE */}
         <div className="lg:col-span-5">
-          <div className="relative w-full h-[360px] sm:h-[450px] lg:h-[700px]">
+          <div className="relative w-full h-[400px] sm:h-[450px] lg:h-[700px]">
             <Image
               src="/person-2.png"
               alt="J1 Exchange Program"

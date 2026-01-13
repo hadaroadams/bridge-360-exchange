@@ -12,7 +12,7 @@ export default function CoursesPage() {
       {/* ================= HERO ================= */}
       <section className="relative  h-[65vh] min-h-[440px] bg-black overflow-hidden">
         <Image
-          src="/bg-04.jpg"
+          src="/logo-dark.jpeg"
           alt="Courses"
           fill
           priority
@@ -28,13 +28,15 @@ export default function CoursesPage() {
             className="text-center max-w-3xl"
           >
             <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-              Learn With{" "}
-              <span className="text-[#C78A2E]">Global Standards</span>
+              Visa Opportunities That Meet Your{" "}
+              <span className="text-[#C78A2E]">
+                International Travel Intent
+              </span>
             </h1>
 
             <p className="mt-6 text-gray-300 text-lg">
-              Language mastery, exam preparation, and career programs designed
-              to open international opportunities.
+              Want to study or work abroach, Bridge360 Exchange & Travels have
+              proven methods that works for everyon
             </p>
           </motion.div>
         </div>

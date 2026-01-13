@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/accordion";
 import Image from "next/image";
 import WhyChooseUs from "./WhyChooseUs";
+import Link from "next/link";
 
 function WhyChooseUsAndAboutUsSection() {
   return (
@@ -51,7 +52,8 @@ function WhyChooseUsAndAboutUsSection() {
               text-[#111111]
             "
           >
-            “We prepare you to achieve your goals with professional tutors.”
+            “Stuck in your application process? Or need help with an existing
+            process or application.”
           </h3>
 
           <p
@@ -63,12 +65,13 @@ function WhyChooseUsAndAboutUsSection() {
               max-w-lg
             "
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. We focus
-            on quality education, real-world skills, and global opportunities.
+            Let Bridge360 Exchange & Travels step in—our experts simplify every
+            stage, remove the stress, and guide you confidently to success.
           </p>
 
-          <Button className="mt-10 px-8">Read More</Button>
+          <Button className="mt-10 px-8" asChild>
+            <Link href="/about">Read More</Link>
+          </Button>
         </div>
       </div>
     </section>

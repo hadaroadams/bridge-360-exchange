@@ -87,7 +87,7 @@ export default function HomeTravelOpportunitySection() {
               {/* Link to Course Page */}
               <Link
                 // href={``}
-                href={`/courses/${item.slug}`}
+                href={`/travel-opportunity/${item.slug}`}
                 className="mt-5 inline-block text-primary font-semibold hover:underline"
               >
                 Learn More →

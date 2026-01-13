@@ -13,7 +13,7 @@ function TravelOpportunityContent({ slug }: { slug: string }) {
       {/* ================= HERO ================= */}
       <section className="relative h-[70vh] min-h-[480px] bg-black">
         <Image
-          src="/bg-04.jpg"
+          src="/logo-dark.jpeg"
           alt={travel_opportunity_detail.title}
           fill
           className="object-cover"
